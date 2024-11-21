@@ -1,0 +1,192 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-elem {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    list-style-type: none;
+    font-size: 18px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-elem:hover {
+    background-color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: white !important;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ora {
+    font-weight: bold;
+    color: black;
+    background-color: gray;
+    width: 90%;
+    max-width: 450px;
+    height: 300px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#idomost {
+    font-size: 50px;
+}
+
+.oraszovegpadd {
+    padding-top: 10px;
+}
+
+.clock-container {
+    color: black;
+    background-color: grey;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.gombok {
+    text-align: center;
+}
+
+#time {
+    font-size: 100px;
+}
+
+#startBtn, #stopBtn, #clearBtn {
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.visszaszamlalo {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.valaszdki {
+    font-size: 25px;
+    color: green;
+    padding-top: 40px;
+    text-align: center;
+}
+
+input[type="date"] {
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.bgcolor {
+    background-color: grey !important;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-elem {
+        margin-right: 10px;
+    }
+
+    .ora, .bgcolor {
+        width: 90%;
+        height: auto;
+    }
+
+    #time {
+        font-size: 50px;
+    }
+
+    .gombok button {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+
+    #idomost {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-elem {
+        font-size: 16px;
+    }
+
+    .ora, .bgcolor {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #time {
+        font-size: 40px;
+    }
+
+    .gombok button {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .valaszdki {
+        font-size: 20px;
+    }
+}
